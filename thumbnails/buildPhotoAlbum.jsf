@@ -1,0 +1,36 @@
+App.progressCountTotal = 4;
+App.progressCountCurrent = 0;
+fw.dismissBatchDialogWhenDone = true;
+doc = fw.openDocument('file:///C|/wamp/www/1/images/andaman.jpg');
+App.progressCountCurrent = 1;
+App.batchStatusString = 'andaman.jpg';
+if (!Files.exists('file:///C|/wamp/www/1/images/andaman_jpg.jpg') || confirm('file:///C|/wamp/www/1/images/andaman_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/images/andaman_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/wamp/www/1/thumbnails/andaman_jpg.jpg') || confirm('file:///C|/wamp/www/1/thumbnails/andaman_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/thumbnails/andaman_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/wamp/www/1/images/goa.jpg');
+App.progressCountCurrent = 2;
+App.batchStatusString = 'goa.jpg';
+if (!Files.exists('file:///C|/wamp/www/1/images/goa_jpg.jpg') || confirm('file:///C|/wamp/www/1/images/goa_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/images/goa_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/wamp/www/1/thumbnails/goa_jpg.jpg') || confirm('file:///C|/wamp/www/1/thumbnails/goa_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/thumbnails/goa_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/wamp/www/1/images/kerala.jpg');
+App.progressCountCurrent = 3;
+App.batchStatusString = 'kerala.jpg';
+if (!Files.exists('file:///C|/wamp/www/1/images/kerala_jpg.jpg') || confirm('file:///C|/wamp/www/1/images/kerala_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/images/kerala_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/wamp/www/1/thumbnails/kerala_jpg.jpg') || confirm('file:///C|/wamp/www/1/thumbnails/kerala_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/thumbnails/kerala_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/wamp/www/1/images/sample.jpg');
+App.progressCountCurrent = 4;
+App.batchStatusString = 'sample.jpg';
+if (!Files.exists('file:///C|/wamp/www/1/images/sample_jpg.jpg') || confirm('file:///C|/wamp/www/1/images/sample_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/images/sample_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/wamp/www/1/thumbnails/sample_jpg.jpg') || confirm('file:///C|/wamp/www/1/thumbnails/sample_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/wamp/www/1/thumbnails/sample_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:60, jpegSmoothness:2, jpegSubsampling:1, name:"JPEG - Smaller File", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+'done';
